@@ -4,19 +4,43 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 100px 1fr 100px;
-    background-color: purple;
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #F7FAFC;
+    justify-content: center;
 }
 
-main{
-    display: grid;
-    place-content: center;
+header{
+    height: auto;
+    width: 95%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid #2C5282 3px;
+    background-color: #FFFFFF;
+    color: #1A202C;
 }
 
-h1{
-    font-size: 4rem;
-    color: orange;
+.apresentacao {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding-top: 24px;
+}
+
+.informacoes {
+    width: 50%;
+}
+
+.imagemApresentacao {
+    width: 50%;
+}
+.imagemApresentacao img {
+    height: 70%;
+    width: 100%;
 }

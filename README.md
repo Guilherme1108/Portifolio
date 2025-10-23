@@ -1,9 +1,5 @@
 # Portifolio
 
-![](./Preview.png)
-
-Primeira pagina criada com foco no git hub, desenvolvido nas aulas da disciplina Linguagem de Marcacao na escola SENAI Jandira.
-
 ## Tecnologias
 * html
 * CSS
