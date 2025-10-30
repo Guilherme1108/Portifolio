@@ -236,6 +236,11 @@ a {
     text-decoration: none;
     color: #221a2c;
     cursor: pointer;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    color: #5f0f40;
 }
 
 
