@@ -19,7 +19,7 @@ O site é dividido em partes que facilitam a navegação:
 - **Habilidades** — Tecnologias, ferramentas e conhecimentos que domino.  
 - **Projetos** — Trabalhos, experimentos e sistemas que desenvolvi.  
 - **Formação** — Cursos, certificados e instituições que fazem parte da minha trajetória.  
-- **Entre em contato** — Formulário e links para minhas redes sociais e formas de contato.
+- **Entre em contato** — Links para minhas redes sociais e formas de contato.
 
 ---
 
