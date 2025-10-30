@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@500;700&display=swap');
+
 body {
     min-height: 100vh;
     width: 100%;
@@ -12,6 +14,7 @@ body {
     align-items: center;
     background-color: #2f0455;
     color: #221a2c;
+    font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -30,18 +33,20 @@ h1 {
 }
 
 .apresentacao {
-    height: 90%;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
     padding: 40px;
-    padding-bottom: 80px;
     border-bottom: solid #5a189a 3px;
 }
 
 .informacoes {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .informacoes h2 {
@@ -63,7 +68,7 @@ h1 {
 
 .imagemApresentacao img {
     height: 80%;
-    width: 80%;
+    width: 90%;
     border-radius: 50%;
     border: solid 2px #2f0455;
 }
@@ -79,8 +84,8 @@ main {
     background-color: #FFFFFF;
 }
 
-.habilidades{
-    height: 500px;
+.habilidades {
+    height: auto;
     width: 97%;
     display: flex;
     flex-direction: column;
@@ -109,7 +114,7 @@ li {
     line-height: 1.5;
 }
 
-.projetos{
+.projetos {
     height: auto;
     width: 97%;
     display: flex;
@@ -128,7 +133,7 @@ li {
     margin: 0 auto;
 }
 
-.leagueOfLegends {
+.bordaDivisoria {
     border-bottom: solid #5a189a5e 2px;
 }
 
@@ -139,8 +144,8 @@ li {
 }
 
 .dadosProjeto img {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 8px;
     background-color: #ddd;
@@ -207,21 +212,6 @@ button:hover {
     margin-bottom: 4px;
 }
 
-.experiencia-profissional {
-    width: 97%; 
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    border-bottom: solid #5a189a 3px;
-}
-
-.experiencia-profissional p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 4px;
-}
-
 footer {
     height: auto;
     width: 95%;
@@ -243,7 +233,184 @@ footer {
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
     color: #221a2c;
     cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+
+    body {
+        line-height: 1.2;
+    }
+    .informacoes h2 {
+        font-size: 2rem;
+    }
+
+    .informacoes p {
+        font-size: 1rem;
+    }
+
+    li {
+        line-height: 1.2;
+    }
+
+    .descricao p {
+        line-height: 1.2;
+    }
+
+    .curso p {
+        line-height: 1.2;
+    }
+
+    .experiencia-profissional p {
+        line-height: 1.2;
+    }
+
+    .contato {
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .apresentacao {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 40px;
+        border-bottom: solid #5a189a 3px;
+    }
+    
+    .informacoes {
+        width: 100%;
+    }
+
+
+    .informacoes h2 {
+        padding-bottom: 24px;
+        width: 50%;
+        position: relative;
+    }
+
+    .imagemApresentacao {
+        height: 125px;
+        width: 125px;
+        justify-content: end;
+        align-items: start;
+        position: absolute;
+        right: 70px;
+        top: 125px;
+    }
+
+    .imagemApresentacao img {
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+
+    }
+
+    .dadosProjeto img {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .projeto {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 0;
+        margin: 0 auto;
+    }
+    
+    .leagueOfLegends {
+        border-bottom: solid #5a189a5e 2px;
+    }
+    
+    .dadosProjeto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dadosProjeto img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        background-color: #ddd;
+        border: solid 2px #2f0455;
+    }
+    
+    .dadosProjeto h3 {
+        font-size: 1.2rem;
+        margin: 16px 0;
+        text-align: center;
+    }
+
+    .descricao {
+        max-width: 600px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .imagemApresentacao {
+        top: 170px;
+    }
+}
+
+@media (max-width: 470px) {
+
+    h1 {
+        padding-left: 0px;
+        border-bottom: solid #5a189a 3px;
+    }
+
+    .apresentacao {
+        padding: 0px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .imagemApresentacao {
+        top: 190px;
+        right: 40px;
+    }
+
+    .habilidades {
+        margin-top: 40px;
+        padding: 0px;
+        padding-bottom: 40px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding-left: 20px;
+    }
+
+    .projetos {
+        padding: 0px;
+        margin-top: 40px;
+    }
+
+    .formacao {
+        padding: 0px;
+        margin-top: 40px;
+    }
+
+    footer {
+        padding: 20px;
+    }
 }
